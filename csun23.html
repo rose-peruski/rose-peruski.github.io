@@ -15,7 +15,7 @@
     <body>
 
         <h1>The Snack Talk: 15 Minute Immersive A11y Trainings</h1>
-        <button id="slide1" onclick="startShow()">Start the Show</button>
+        <button id="slide1" onclick="nextSlide(document.getElementById('slide1'), document.getElementById('slide2'))">Start the Show</button>
 
         <div id="slide2" class="hidden">
             <h2>Introductions</h2>
@@ -30,7 +30,9 @@
         </div>
         <div id="slide3" class="hidden">
             <h2>Problem Statement</h2>
-            <div>Agreement that Accessibility and inclusivity are important and we do not have good products unless they are accessible. Knowledge level on accessibility is low or non-existent. Training takes time and energy. Office Hours also needed a boost to give people the knowledge to know what questions to ask.  </div>
+            <div>Agreement that Accessibility and inclusivity are important and we do not have good products unless they are accessible.
+                 Knowledge level on accessibility is low or non-existent. 
+                 Training takes time and energy. Office Hours also needed a boost to give people the knowledge to know what questions to ask.  </div>
             <button onclick="previousSlide(document.getElementById('slide3'), document.getElementById('slide2'))">Previous Slide</button>
             <button onclick="nextSlide(document.getElementById('slide3'), document.getElementById('slide4'))">Next Slide</button>
             
@@ -55,7 +57,7 @@
             <h2 >Introducing Snack Talks</h2>
             <div>
                 <ul>
-                    <li>According to an article from the Alliance for Academic Internal Medicine, doctors Avraham Z. Cooper, MD and Jeremy B. Richards, MD, MA stated, “adult learning data suggest that typical learner attention span wanes after about 15 to 20 minutes.”</li>
+                    <li>According to an article from the Alliance for Academic Internal Medicine, doctors Avraham Z. Cooper, MD and Jeremy B. Richards, MD, MA stated, “adult learning data suggest that typical learner attention span wanes after about 15 to 20 minutes.”</li>
                     <li>The snack talk accomplishes multiple things
                         <ul>
                             <li>Keeps attendees engaged</li>

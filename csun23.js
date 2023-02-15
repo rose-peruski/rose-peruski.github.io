@@ -9,12 +9,12 @@ function nextSlide(x, y) {
     y.classList.remove('hidden');
 }
 
-function startShow(){
-    let  x = document.getElementById("slide2");
-    x.classList.remove("hidden");
-    let y = document.getElementById("slide1");
-    y.classList.add("hidden");
-}
+// function startShow(){
+//     let  x = document.getElementById("slide2");
+//     x.classList.remove("hidden");
+//     let y = document.getElementById("slide1");
+//     y.classList.add("hidden");
+// }
 
 // function slide2View(){
 //     let  x = document.getElementById("slide3" );
