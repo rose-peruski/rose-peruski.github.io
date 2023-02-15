@@ -7,27 +7,38 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>CSUN Test</title>
+        <title>A11y Snack Talk</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="csun23.css">
     </head>
     <body>
 
-        <h1>A11y Snack Talks</h1>
-        <div id="intro">
+        <h1>The Snack Talk: 15 Minute Immersive A11y Trainings</h1>
+        <button id="slide1" onclick="startShow()">Start the Show</button>
+
+        <div id="slide2" class="hidden">
             <h2>Introductions</h2>
             <h3>Nikki Volpenhein</h3>
             <h3>Rose Peruski</h3>
             <p>Accessibility Coordinator - Kroger Technology & Digital</p>
+            <!-- <button onclick="slide2View()">Next Slide</button> -->
+            <button onclick="previousSlide(document.getElementById('slide2'), document.getElementById('slide1'))">Previous Slide</button>
+            <button onclick="nextSlide(document.getElementById('slide2'), document.getElementById('slide3'))">Next Slide</button>
+            
+            
         </div>
-        <div id="problemState">
+        <div id="slide3" class="hidden">
             <h2>Problem Statement</h2>
             <div>Agreement that Accessibility and inclusivity are important and we do not have good products unless they are accessible. Knowledge level on accessibility is low or non-existent. Training takes time and energy. Office Hours also needed a boost to give people the knowledge to know what questions to ask.  </div>
-            <button onclick="slide3View()">Next Slide</button>
+            <button onclick="previousSlide(document.getElementById('slide3'), document.getElementById('slide2'))">Previous Slide</button>
+            <button onclick="nextSlide(document.getElementById('slide3'), document.getElementById('slide4'))">Next Slide</button>
+            
+            
+            
         </div>
         
-        <div id="slide3" class="hidden">
+        <div id="slide4" class="hidden">
             <h2>Past Trainings</h2>
             <div>
                 <ul>
@@ -35,11 +46,12 @@
                     <li>HTML Formatted Training - 1 hour</li>
                 </ul>
             </div>
-            <button onclick="slide1View()">Previous Slide</button>
-            <button onclick="slide4View()">Next Slide</button>
+            <button onclick="previousSlide(document.getElementById('slide4'), document.getElementById('slide3'))">Previous Slide</button>
+            <button onclick="nextSlide(document.getElementById('slide4'), document.getElementById('slide5'))">Next Slide</button>
+            
         </div>
         
-        <div id="slide4" class="hidden">
+        <div id="slide5" class="hidden">
             <h2 >Introducing Snack Talks</h2>
             <div>
                 <ul>
@@ -55,10 +67,12 @@
                     <li>"Snack Talk": A bite-sized piece of information that takes as long to consume as your afternoon snack</li>
                 </ul>
             </div>
-                <button onclick="slide5View()">Next Slide</button>
+            <button onclick="previousSlide(document.getElementById('slide5'), document.getElementById('slide5'))">Previous Slide</button>
+            <button onclick="nextSlide(document.getElementById('slide5'), document.getElementById('slide6'))">Next Slide</button>
+            
         </div>
         
-        <div id="slide5" class="hidden">
+        <div id="slide6" class="hidden">
             <h2 >The Snack Talk Format</h2>
             <div>
                 <ul>
@@ -71,10 +85,11 @@
                     <li>Go back to the source: we often use HTML pages to explain the connection between what we see and what AT understands</li>
                 </ul>
             </div>
-            <button onclick="slide6View()">Next Slide</button>
+            <button onclick="previousSlide(document.getElementById('slide6'), document.getElementById('slide5'))">Previous Slide</button>
+            <button onclick="nextSlide(document.getElementById('slide6'), document.getElementById('slide7'))">Next Slide</button>
         </div>
 
-        <div id="slide6" class="hidden">
+        <div id="slide7" class="hidden">
             <h2 >Bite #1: Make It Fun & Genuine</h2>
             <div>
                 <p>We all have different definitions of fun, so be creative and true to your own personality. </p>
@@ -103,9 +118,11 @@
             </div>
 
             </div>
+            <button onclick="previousSlide(document.getElementById('slide7'), document.getElementById('slide6'))">Previous Slide</button>
+            <button onclick="nextSlide(document.getElementById('slide7'), document.getElementById('slide8'))">Next Slide</button>
         </div>
 
-        <div id="slide7" class="hidden">
+        <div id="slide8" class="hidden">
             <h2 >Bite #2: Bring Others In</h2>
             <div>
                 <ul>
@@ -119,9 +136,11 @@
                     </li>
                 </ul>
             </div>
+            <button onclick="previousSlide(document.getElementById('slide8'), document.getElementById('slide7'))">Previous Slide</button>
+            <button onclick="nextSlide(document.getElementById('slide8'), document.getElementById('slide9'))">Next Slide</button>
         </div>
 
-        <div id="slide8" class="hidden">
+        <div id="slide9" class="hidden">
             <h2 >Bite #3: Make It Available</h2>
             <div>
                 <ul>
@@ -130,7 +149,19 @@
                     <li>Other promotion ideas: share links in newsletter, email blast, etc.</li>
                 </ul>
             </div>
+            <button onclick="previousSlide(document.getElementById('slide9'), document.getElementById('slide8'))">Previous Slide</button>
+            <button onclick="nextSlide(document.getElementById('slide9'), document.getElementById('slide10'))">Next Slide</button>
         </div>
+
+        <div id="slide10" class="hidden">
+            <h2 >Thank You</h2>
+            <div>
+                
+            </div>
+            <button onclick="previousSlide(document.getElementById('slide10'), document.getElementById('slide9'))">Previous Slide</button>
+            <button onclick="nextSlide(document.getElementById('slide10'), document.getElementById('slide1'))">Back to Beginning</button>
+        </div>
+
         
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
