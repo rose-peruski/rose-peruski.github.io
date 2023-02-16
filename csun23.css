@@ -1,3 +1,8 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
 .hidden{
     display: none;
 }
@@ -5,4 +10,107 @@
 img{
     max-width: 200px;
     max-height: 300px;
+}
+
+.layout {
+    display: grid;
+    width: 50%;
+}
+
+.heading-xl {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.heading-l {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.heading-m {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+}
+
+.heading-s {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+.body-l {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.body-m {
+    font-family: 'Roboto', sans-serif;
+    font-size: .75rem;
+    line-height: 1.25rem;
+}
+
+.primary-button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding: .5rem 1rem;
+    background: #0F52A2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 1.25rem;
+}
+
+
+.secondary-button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding: .5rem 1rem;
+    color: #0F52A2;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #0F52A2;
+    border-radius: 1.25rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.mr-2 {
+    margin-right: 2rem;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.ml-2 {
+    margin-left: 2rem;
+}
+
+.slide-container {
+    height: 500px;
 }

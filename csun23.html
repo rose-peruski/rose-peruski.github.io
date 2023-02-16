@@ -11,27 +11,43 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="csun23.css">
+        <!-- begin fonts import -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <!-- end fonts import -->
     </head>
-    <body>
+    <body class="ml-2 mt-2">
+       
 
-        <h1>The Snack Talk: 15 Minute Immersive A11y Trainings</h1>
-        <button id="slide1" onclick="nextSlide(document.getElementById('slide1'), document.getElementById('slide2'))">Start the Show</button>
+        <h1 class="heading-xl">The Snack Talk: 15 Minute Immersive A11y Trainings</h1>
+        <div id="slide1">
+            <div class="slide-container"></div>
+            <button class="primary-button mt-1" onclick="nextSlide(document.getElementById('slide1'), document.getElementById('slide2'))">Start the Show</button>
+        </div>
+        
 
-        <div id="slide2" class="hidden">
-            <h2>Introductions</h2>
-            <h3>Nikki Volpenhein</h3>
-            <h3>Rose Peruski</h3>
-            <p>Accessibility Coordinator - Kroger Technology & Digital</p>
+        <div id="slide2" class="hidden" >
+            <div class="slide-container">
+                <h2 class="heading-l">Introductions</h2>
+            <h3 class="heading-m">Nikki Volpenhein</h3>
+            <p>Nikki is cool</p>
+            <h3 class="heading-m">Rose Peruski</h3>
+            <p class="body-l">Accessibility Coordinator - Kroger Technology & Digital</p>
             <img src="rose-pic.jpeg" alt="">
             <a href="https://www.linkedin.com/in/rose-peruski-cpacc-3a49983">Linked In</a>
             <!-- <button onclick="slide2View()">Next Slide</button> -->
-            <button onclick="previousSlide(document.getElementById('slide2'), document.getElementById('slide1'))">Previous Slide</button>
-            <button onclick="nextSlide(document.getElementById('slide2'), document.getElementById('slide3'))">Next Slide</button>
+            </div>
+            
+            <button class="secondary-button mt-1 mr-1" onclick="previousSlide(document.getElementById('slide2'), document.getElementById('slide1'))">Previous Slide</button>
+            <button class="primary-button mt-1" onclick="nextSlide(document.getElementById('slide2'), document.getElementById('slide3'))">Next Slide</button>
             
             
         </div>
-        <div id="slide3" class="hidden">
-            <h2>The Need</h2>
+
+        <div id="slide3" class="hidden" >
+            <div class="slide-container">
+                <h2 class="heading-l">The Need</h2>
             <div>
                 <ul>
                     <li>Generally, our colleagues agree that Accessibility and inclusivity are important and we do not have good products unless they are accessible</li>
@@ -39,28 +55,34 @@
                     <li>Training takes time and energy - colleagues are often spread thin and haven't had time or space to include accessibility and accessibility training</li>
                 </ul>
                   </div>
-            <button onclick="previousSlide(document.getElementById('slide3'), document.getElementById('slide2'))">Previous Slide</button>
-            <button onclick="nextSlide(document.getElementById('slide3'), document.getElementById('slide4'))">Next Slide</button>
-            
-            
-            
-        </div>
-        
-        <div id="slide4" class="hidden">
-            <h2>Past Trainings</h2>
-            <div>
-                <ul>
-                    <li>General Accessibility Training - 1 hour</li>
-                    <li>HTML Formatted Training - 1 hour</li>
-                </ul>
             </div>
-            <button onclick="previousSlide(document.getElementById('slide4'), document.getElementById('slide3'))">Previous Slide</button>
-            <button onclick="nextSlide(document.getElementById('slide4'), document.getElementById('slide5'))">Next Slide</button>
+            
+            <button class="secondary-button mt-1 mr-1" onclick="previousSlide(document.getElementById('slide3'), document.getElementById('slide2'))">Previous Slide</button>
+            <button class="primary-button mt-1" onclick="nextSlide(document.getElementById('slide3'), document.getElementById('slide4'))">Next Slide</button>
+            
+            
             
         </div>
         
-        <div id="slide5" class="hidden">
-            <h2 >Introducing Snack Talks</h2>
+        <div id="slide4" class="hidden" >
+            <div class="slide-container">
+                <h2 class="heading-l">Past Trainings</h2>
+                <div>
+                    <ul>
+                        <li>General Accessibility Training - 1 hour</li>
+                        <li>HTML Formatted Training - 1 hour</li>
+                    </ul>
+                </div>
+            </div>
+           
+            <button class="secondary-button mt-1 mr-1" onclick="previousSlide(document.getElementById('slide4'), document.getElementById('slide3'))">Previous Slide</button>
+            <button class="primary-button mt-1" onclick="nextSlide(document.getElementById('slide4'), document.getElementById('slide5'))">Next Slide</button>
+            
+        </div>
+        
+        <div id="slide5" class="hidden" >
+            <div class="slide-container">
+                <h2 class="heading-l">Introducing Snack Talks</h2>
             <div>
                 <ul>
                     <li>According to an article from the Alliance for Academic Internal Medicine, doctors Avraham Z. Cooper, MD and Jeremy B. Richards, MD, MA stated, “adult learning data suggest that typical learner attention span wanes after about 15 to 20 minutes.”</li>
@@ -75,13 +97,16 @@
                     <li>"Snack Talk": A bite-sized piece of information that takes about as long to consume as your afternoon snack</li>
                 </ul>
             </div>
-            <button onclick="previousSlide(document.getElementById('slide5'), document.getElementById('slide5'))">Previous Slide</button>
-            <button onclick="nextSlide(document.getElementById('slide5'), document.getElementById('slide6'))">Next Slide</button>
+            </div>
+            
+            <button class="secondary-button mt-1 mr-1" onclick="previousSlide(document.getElementById('slide5'), document.getElementById('slide5'))">Previous Slide</button>
+            <button class="primary-button mt-1" onclick="nextSlide(document.getElementById('slide5'), document.getElementById('slide6'))">Next Slide</button>
             
         </div>
         
-        <div id="slide6" class="hidden">
-            <h2 >The Snack Talk Format</h2>
+        <div id="slide6" class="hidden" >
+            <div class="slide-container">
+                <h2 class="heading-l">The Snack Talk Format</h2>
             <div>
                 <ul>
                     <li>Stay on a single topic:
@@ -93,16 +118,19 @@
                     <li>Go back to the source: we often use HTML pages to explain the connection between what we see and what AT understands</li>
                 </ul>
             </div>
-            <button onclick="previousSlide(document.getElementById('slide6'), document.getElementById('slide5'))">Previous Slide</button>
-            <button onclick="nextSlide(document.getElementById('slide6'), document.getElementById('slide7'))">Next Slide</button>
+            </div>
+            
+            <button class="secondary-button mt-1 mr-1" onclick="previousSlide(document.getElementById('slide6'), document.getElementById('slide5'))">Previous Slide</button>
+            <button class="primary-button mt-1" onclick="nextSlide(document.getElementById('slide6'), document.getElementById('slide7'))">Next Slide</button>
         </div>
 
-        <div id="slide7" class="hidden">
-            <h2 >Bite #1: Make It Fun & Genuine</h2>
+        <div id="slide7" class="hidden" >
+            <div class="slide-container">
+                <h2 class="heading-l">Bite #1: Make It Fun & Genuine</h2>
             <div>
                 <p>We all have different definitions of fun, so be creative and true to your own personality. </p>
                     <p>Being genuine and up front about what we know and don’t know has aided in success.</p> 
-            <h3>Fun</h3>
+            <h3 class="heading-m" >Fun</h>
             
             <p>Rose still has an undying love for The Office, so many examples center around that as an example.</p>
             <ul>Why?
@@ -110,7 +138,7 @@
                 <li>The Office is widely known and generally not controversial</li>
                 <li>The Office is easy to riff off of to bring in moments of laughter or smiles</li>
             </ul>
-            <h3 id="dwight_app2">Schrute Farms Reservations</h3>
+            <h3 class="heading-m" id="dwight_app2">Schrute Farms Reservations</h3>
                     <p id="note">Note: Date of Birth should include the Day, Month, and Year of Our Lord </p>
                 
                     <form action="" role="form" aria-label="Request to reserve at Schrute Farms">
@@ -120,18 +148,21 @@
                             <input type="text" required>
                         </label>
                     </form>
-            <h3>Genuine</h3>
+            <h3 class="heading-m">Genuine</h3>
             <div>
                 Our sessions and recordings are by no means perfect. The struggles we go through when an AT doesn’t do what we expect (despite all the practicing we do beforehand) is relatable and puts people at ease that if they are having trouble it isn’t because they are incapable of learning a11y or the tools, but that it isn’t always easy and clear cut. We tell people “progress over perfection” and it rings true when we are demonstrating that ourselves.
             </div>
 
             </div>
-            <button onclick="previousSlide(document.getElementById('slide7'), document.getElementById('slide6'))">Previous Slide</button>
-            <button onclick="nextSlide(document.getElementById('slide7'), document.getElementById('slide8'))">Next Slide</button>
+            </div>
+            
+            <button class="secondary-button mt-1 mr-1" onclick="previousSlide(document.getElementById('slide7'), document.getElementById('slide6'))">Previous Slide</button>
+            <button  class="primary-button mt-1" onclick="nextSlide(document.getElementById('slide7'), document.getElementById('slide8'))">Next Slide</button>
         </div>
 
-        <div id="slide8" class="hidden">
-            <h2 >Bite #2: Bring Others In</h2>
+        <div id="slide8" class="hidden" >
+            <div class="slide-container">
+                <h2 class="heading-l">Bite #2: Bring Others In</h2>
             <div>
                 <ul>
                     <li>We have found that encouraging others' contribution to the conversation builds accessibility culture</li>
@@ -144,12 +175,15 @@
                     </li>
                 </ul>
             </div>
-            <button onclick="previousSlide(document.getElementById('slide8'), document.getElementById('slide7'))">Previous Slide</button>
-            <button onclick="nextSlide(document.getElementById('slide8'), document.getElementById('slide9'))">Next Slide</button>
+            </div>
+            
+            <button class="secondary-button mt-1 mr-1" onclick="previousSlide(document.getElementById('slide8'), document.getElementById('slide7'))">Previous Slide</button>
+            <button class="primary-button mt-1" onclick="nextSlide(document.getElementById('slide8'), document.getElementById('slide9'))">Next Slide</button>
         </div>
 
-        <div id="slide9" class="hidden">
-            <h2 >Bite #3: Make It Available</h2>
+        <div id="slide9" class="hidden" >
+            <div class="slide-container">
+                <h2 class="heading-l">Bite #3: Make It Available</h2>
             <div>
                 <ul>
                     <li>Snack talks are recorded and uploaded into Sharepoint/Teams</li>
@@ -157,17 +191,22 @@
                     <li>Other promotion ideas: share links in newsletter, email blast, etc.</li>
                 </ul>
             </div>
-            <button onclick="previousSlide(document.getElementById('slide9'), document.getElementById('slide8'))">Previous Slide</button>
-            <button onclick="nextSlide(document.getElementById('slide9'), document.getElementById('slide10'))">Next Slide</button>
+            </div>
+            
+            <button class="secondary-button mt-1 mr-1" onclick="previousSlide(document.getElementById('slide9'), document.getElementById('slide8'))">Previous Slide</button>
+            <button class="primary-button mt-1" onclick="nextSlide(document.getElementById('slide9'), document.getElementById('slide10'))">Next Slide</button>
         </div>
 
-        <div id="slide10" class="hidden">
-            <h2 >Thank You</h2>
+        <div id="slide10" class="hidden" >
+            <div class="slide-container">
+                <h2 class="heading-l" >Thank You</h2>
             <div>
                 
             </div>
-            <button onclick="previousSlide(document.getElementById('slide10'), document.getElementById('slide9'))">Previous Slide</button>
-            <button onclick="nextSlide(document.getElementById('slide10'), document.getElementById('slide1'))">Back to Beginning</button>
+            </div>
+            
+            <button class="secondary-button mt-1 mr-1" onclick="previousSlide(document.getElementById('slide10'), document.getElementById('slide9'))">Previous Slide</button>
+            <button class="primary-button mt-1" onclick="nextSlide(document.getElementById('slide10'), document.getElementById('slide1'))">Back to Beginning</button>
         </div>
 
         
