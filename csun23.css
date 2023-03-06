@@ -4,6 +4,10 @@ body{
     line-height: 1.5rem;
 }
 
+.focus-ind:focus-visible {
+    outline: 4px dashed darkorange;
+  }
+      
 p {
     max-width: 35rem;
 }
@@ -159,3 +163,4 @@ p {
     max-height: 300px;
     display: block;
 }
+
