@@ -73,6 +73,7 @@ p {
     color: #FFFFFF;
     border: none;
     border-radius: 1.25rem;
+    margin: 1rem;
 }
 
 
@@ -160,4 +161,9 @@ p {
     max-width: 200px;
     max-height: 300px;
     display: block;
+}
+
+button:focus{
+    outline: #0F52A2 2px solid;
+    outline-offset: 2px;
 }

@@ -9,9 +9,9 @@
 
 // console.log(buttonIds[1]);
 
-// let h2s = document.querySelectorAll('.ml-2 h2')
-//     console.log("there are " + h2s.length);
-//     console.log(h2s[1].id)
+let h2s = document.querySelectorAll('.ml-2 h2')
+    console.log("there are " + h2s.length);
+    console.log(h2s[1].id)
 
  
  
@@ -30,26 +30,38 @@
  function previousSlide(id1, id2){
     id1.classList.add('hidden');
     id2.classList.remove('hidden');
+    pageTitle(id2);
 }
 
 function nextSlide(x, y) {
     x.classList.add('hidden');
     y.classList.remove('hidden');
+    pageTitle(y);
 }
 
-// function () {
-
-// }
+function pageTitle(id1) {
+  console.log(id1.id);
+  newID = id1.id;
+  newID = newID.slice(5)-1;
+  h2Text = h2s[newID].innerHTML;
+  //h2ID = h2.id[newID.slice(5,5)]
+  //newID = newID.slice()
+  
+  document.title = h2Text + " - Snack Talk"
+ // document.title=
+}
 //beginning slide
-document.getElementById("slide1button").addEventListener("click", () => {
+document.getElementById("next0").addEventListener("click", () => {
     document.getElementById("head1").focus();
   });
+
+
 
   document.getElementById("previous1").addEventListener("click", () => {
     document.getElementById("head0").focus();
   });
 
-  //intro
+  
   document.getElementById("next1").addEventListener("click", () => {
     document.getElementById("head2").focus();
   });
