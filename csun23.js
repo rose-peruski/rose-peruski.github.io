@@ -9,15 +9,9 @@
 
 // console.log(buttonIds[1]);
 
-<<<<<<< HEAD
-// let h2s = document.querySelectorAll('.ml-2 h2')
-//     console.log("there are " + h2s.length);
-//     console.log(h2s[1].id)
-=======
 let h2s = document.querySelectorAll('.ml-2 h2')
     console.log("there are " + h2s.length);
     console.log(h2s[1].id)
->>>>>>> title
 
  
  
@@ -45,24 +39,6 @@ function nextSlide(x, y) {
     pageTitle(y);
 }
 
-<<<<<<< HEAD
-// function () {
-
-// }
-//beginning slide
-document.getElementById("slide1button").addEventListener("click", () => {
-    document.getElementById("head1").focus();
-  });
-
-  document.getElementById("previous1").addEventListener("click", () => {
-    document.getElementById("head0").focus();
-  });
-
-  //intro
-  document.getElementById("next1").addEventListener("click", () => {
-    document.getElementById("head2").focus();
-  });
-=======
 function pageTitle(id1) {
   console.log(id1.id);
   newID = id1.id;
@@ -78,7 +54,6 @@ function pageTitle(id1) {
 document.getElementById("next0").addEventListener("click", () => {
     document.getElementById("head1").focus();
   });
->>>>>>> title
 
   //the need
   document.getElementById("previous2").addEventListener("click", () => {
@@ -93,8 +68,6 @@ document.getElementById("next0").addEventListener("click", () => {
     document.getElementById("head2").focus();
   });
 
-<<<<<<< HEAD
-=======
   document.getElementById("previous1").addEventListener("click", () => {
     document.getElementById("head0").focus();
   });
@@ -117,7 +90,6 @@ document.getElementById("next0").addEventListener("click", () => {
     document.getElementById("head2").focus();
   });
 
->>>>>>> title
   document.getElementById("next3").addEventListener("click", () => {
     document.getElementById("head4").focus();
   });
