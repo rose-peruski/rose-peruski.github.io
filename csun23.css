@@ -4,6 +4,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
+    color: #003349;
 }
 
 p {
@@ -166,4 +167,9 @@ p {
 button:focus{
     outline: #0F52A2 2px solid;
     outline-offset: 2px;
+}
+
+.thanks{
+    font-size: 3rem;
+    color: #0F52A2;
 }
