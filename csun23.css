@@ -240,6 +240,11 @@ select:focus {
     display: block;
 }
 
+button:focus{
+    outline: #0F52A2 2px solid;
+    outline-offset: 2px;
+}
+
 @media (min-width: 900px) {
     .slide-container {
         display: grid;
