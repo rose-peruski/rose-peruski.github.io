@@ -267,7 +267,7 @@ button:focus{
 }
 
 @media (min-width: 1280px) {
-    .slide-container {
+    .columns {
         grid-template-columns: 568px 568px;
     }
     
